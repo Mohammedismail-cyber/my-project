@@ -16,7 +16,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#project">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -52,35 +52,36 @@
                 </div>
             </div>
         </section>
-
-        <section id="projects">
-            <h1>Projects</h1>
-            <div class="project">
-                <h2>Project 1</h2>
-                <p>Description of your first project.</p>
-                <!-- Embed PDF -->
-                <iframe src="HYDROFLEET WEB 234.docx" width="50%" height="50px"></iframe>
-            </div>
-            <div class="project">
-                <h2>Project 2</h2>
-                <p>Description of your second project.</p>
-                <!-- Embed another PDF if needed -->
-                <iframe src="another-example.pdf" width="50%" height="50px"></iframe>
-            </div>
-        </section>
+        <main>
+            <section id="project">
+                <h1>My Featured project</h1>
+                <p>This project showcases my work on HYDROFLEET. You can explore the full details below:</p>
+    
+                <div class="pdf-viewer">
+                    <iframe src="HYDROFLEET WEB 237.pdf" width="60%" height="400px">
+                        Your browser does not support PDFs. Download the PDF to view it:
+                        <a href="HYDROFLEET WEB 237.pdf">Download PDF</a>
+                    </iframe>
+                </div>
+            </section>
+        </main>
+    
 
         <section id="contact">
             <h1>Contact</h1>
-            <form id="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="05ce787b-a628-4241-9fac-879c9ddf1e0c">
+        
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
-                
+        
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Your Email" required>
-                
+        
                 <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                
+        
                 <button type="submit">Send</button>
             </form>
         </section>

@@ -64,14 +64,6 @@ section h1 {
     padding-bottom: 0.5rem;
 }
 
-.project {
-    background: #333;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: color 0.3s;
-}
 
 /* Contact Form */
 form {
@@ -186,12 +178,7 @@ footer {
     background-color:#ff4d4d;
 }
 /* Style for embedded PDF */
-iframe {
-    border: none;
-    margin-top: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-}
+
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -222,4 +209,43 @@ iframe {
 
 .social-links a:hover {
     color: white;
+}
+/* Certifications Section */
+#certifications {
+    padding: 4rem 10%;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+.cert-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.certificate {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+.certificate img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.certificate h2 {
+    font-size: 1.2rem;
+    color: #ff4d4d;
+}
+
+.certificate p {
+    font-size: 1rem;
+    color: #ccc;
 }
